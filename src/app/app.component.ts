@@ -11,6 +11,6 @@ export class AppComponent  {
 
   rows(str: string) {
     let tmp = Math.floor(str.length/this.size);
-    return tmp == 0 ? 1 : tmp + 2;
+    return tmp > 0 ? tmp + 2: 1;
   }
 }
