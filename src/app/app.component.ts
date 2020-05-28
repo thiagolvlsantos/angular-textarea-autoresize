@@ -7,7 +7,7 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Autoresize <textarea> in Angular ' + VERSION.full;
-  size = 25;
+  size = 20;
 
   rows(str: string) {
     let tmp = Math.floor(str.length/this.size);
