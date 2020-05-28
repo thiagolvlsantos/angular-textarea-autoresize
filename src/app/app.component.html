@@ -11,11 +11,9 @@
 </div>
 
 <div *ngFor="let f of files">
-   <li>{{f.meta.name }} | {{f.meta.type }} | {{f.meta.size }}: 
+   <li>{{f.meta.name }} | {{f.meta.type }} | {{f.meta.size }} | {{f.meta.lastModified}}: 
      <blockquote>
-     <pre style="background-color: lightgray">
-     {{f.content}}
-      </pre>
+       <pre style="background-color: lightgray">{{f.content}}</pre>
      </blockquote>
    </li>
 </div>
