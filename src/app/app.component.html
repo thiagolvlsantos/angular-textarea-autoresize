@@ -1,12 +1,24 @@
+<html>
+
 <hello name="{{ name }}"></hello>
-<p>
 Write and see the magic happening :)
 <br/>
+<br/>
 <textarea #field (keyup)="rows(field.value)" [rows]="rows(field.value)" [cols]="size"></textarea>
-<br/>
-Length:{{field.value.length}}
-<br/>
-Cols:{{size}}
-<br/>
-Rows:{{rows(field.value)}}
-</p>
+
+<table>
+  <tr>
+    <th style="text-align:right;">Length:</th>
+    <td>{{field.value.length}}</td>
+  </tr>
+  <tr>
+    <th style="text-align:right;">Cols:</th>
+    <td>{{size}}</td>
+  </tr>
+  <tr>
+    <th style="text-align:right;">Rows:</th>
+    <td >{{rows(field.value)}}</td>
+  </tr>
+</table>
+
+</html>
