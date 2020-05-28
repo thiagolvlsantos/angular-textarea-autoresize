@@ -10,6 +10,7 @@ export class AppComponent  {
   size = 25;
 
   rows(str: string) {
-    return Math.ceil(str.length/this.size)+1;
+    let tmp = Math.floor(str.length/this.size);
+    return tmp == 0 ? 1 : tmp + 2;
   }
 }
