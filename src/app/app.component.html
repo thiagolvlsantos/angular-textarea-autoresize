@@ -2,11 +2,11 @@
 <p>
 Write and see the magic happening :)
 <br/>
-<textarea #field (keyup)="up()" [rows]="(field.value.length/size)+2" [cols]="size"></textarea>
+<textarea #field (keyup)="rows(field.value)" [rows]="rows(field.value)" [cols]="size"></textarea>
 <br/>
 Length:{{field.value.length}}
 <br/>
 Cols:{{size}}
 <br/>
-Rows:{{(field.value.length/size)+2}}
+Rows:{{rows(field.value)}}
 </p>

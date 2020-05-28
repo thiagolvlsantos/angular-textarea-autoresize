@@ -9,7 +9,7 @@ export class AppComponent  {
   name = 'Autoresize <textarea> in Angular ' + VERSION.full;
   size = 25;
 
-  up() {
-    //nothing
+  rows(str: string) {
+    return Math.ceil(str.length/this.size)+1;
   }
 }
