@@ -1,6 +1,12 @@
 <hello name="{{ name }}"></hello>
 <p>
-
+Write and see the magic happening :)
+<br/>
 <textarea #field (keyup)="up()" [rows]="(field.value.length/size)+2" [cols]="size"></textarea>
-{{field.value.length}}
+<br/>
+Length:{{field.value.length}}
+<br/>
+Cols:{{size}}
+<br/>
+Rows:{{(field.value.length/size)+2}}
 </p>
